@@ -1,0 +1,69 @@
+::ng-deep {
+  .ads-carousel {
+    .p-carousel-container {
+      position: relative;
+
+      .p-carousel-prev {
+        position: absolute;
+        z-index: 10;
+        left: 20px;
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        background: #fff;
+        opacity: 0.5;
+        transition: 0.4s ease;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .p-carousel-next {
+        position: absolute;
+        z-index: 10;
+        right: 20px;
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        background: #fff;
+        opacity: 0.5;
+        transition: 0.4s ease;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .p-carousel-indicators {
+      gap: 15px;
+    }
+    .p-carousel-indicator {
+      display: block;
+
+      .p-link {
+        min-width: 30px;
+        border: none;
+        height: 5px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.4s ease;
+
+        &:hover {
+          background: #ff6b72;
+        }
+      }
+
+      &.p-highlight {
+        .p-link {
+          background: #ea1d28;
+        }
+      }
+    }
+  }
+}
