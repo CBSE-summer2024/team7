@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+  width: 180px;
+  height: 270px;
+  border: 1px solid rgb(44, 43, 43);
+  border-radius: 8px;
+  overflow: hidden;
+}
+img {
+  position: relative;
+  width: 180px;
+  height: 170px;
+  object-fit: fill;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  height: 30px;
+  padding-left:10px; /* Add padding instead of margin to keep it inside the container */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+.price > *:first-child {
+    width: 60px;
+    
+}
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  font-weight: 100;
+  font-size: smaller;
+  
+}
+.discounted-price {
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.description {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.rating span {
+  font-size: 20px; /* Adjust size of stars */
+  color: gold; /* Color of filled stars */
+  margin-right: -8px; /* Spacing between stars */
+}
