@@ -18,7 +18,48 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 })
 export class CategoryContainerComponent {
   searchText: FormControl = new FormControl('');
-  items: string[] = [];
+  items: string[] = [
+    'T-Shirt',
+    'Jeans',
+    'Shirt',
+    'Jacket',
+    'Dress',
+    'Skirt',
+    'Sweater',
+    'Blazer',
+    'Shorts',
+    'Pants',
+    'Coat',
+    'Suit',
+    'Hoodie',
+    'Blouse',
+    'Cardigan',
+    'Tank Top',
+    'Tracksuit',
+    'Overcoat',
+    'Dungarees',
+    'Cargo Pants',
+    'Polo Shirt',
+    'Sweatshirt',
+    'Jumpsuit',
+    'Leggings',
+    'Romper',
+    'Vest',
+    'Top',
+    'Formal Shirt',
+    'Denim Jacket',
+    'Leather Jacket',
+    'Bomber Jacket',
+    'Windbreaker',
+    'Parkas',
+    'Poncho',
+    'Peacoat',
+    'Trench Coat',
+    'Bikini',
+    'Swimsuit',
+    'Sarong',
+    'Board Shorts',
+  ];
   filteredItems: string[] = [];
 
   constructor() {}
