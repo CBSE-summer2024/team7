@@ -1,11 +1,21 @@
-.container {
-  position: relative;
-  width: 180px;
-  height: 270px;
-  border: 1px solid rgb(44, 43, 43);
-  border-radius: 8px;
-  overflow: hidden;
-}
+.product-card {
+    position: relative;
+    min-width: 170px;
+    max-width: 180px; 
+    height: 280px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 8px;
+    overflow: hidden; 
+    background-color: rgba(255, 255, 255, 0.73);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .product-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    
+  }
 img {
   position: relative;
   width: 180px;
@@ -18,16 +28,16 @@ img {
   justify-content: space-between;
   width: 180px;
   height: 30px;
-  padding-left:10px; /* Add padding instead of margin to keep it inside the container */
-  box-sizing: border-box; /* Include padding in width calculations */
+   padding: 0 10px; 
+  box-sizing: border-box; 
 }
 .price > *:first-child {
-    width: 60px;
+    width: 70px;
     
 }
 .original-price {
   text-decoration: line-through;
-  color: gray;
+  color: rgb(0, 0, 0);
   font-weight: 100;
   font-size: smaller;
   
@@ -42,8 +52,8 @@ img {
   margin-top: 0;
   margin-left: 10px;
 }
-.rating span {
-  font-size: 20px; /* Adjust size of stars */
-  color: gold; /* Color of filled stars */
-  margin-right: -8px; /* Spacing between stars */
+.star-rating span {
+  font-size: 20px; 
+  color: gold; 
+  margin-right: -2px; 
 }
