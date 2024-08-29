@@ -16,163 +16,189 @@ export class CategoryListComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Furniture',
-        icon: 'pi pi-box',
+        label: 'Men',
+        icon: 'pi pi-male',
         items: [
           [
             {
-              label: 'Living Room',
+              label: 'Clothing',
               items: [
-                { label: 'Accessories' },
-                { label: 'Armchair' },
-                { label: 'Coffee Table' },
-                { label: 'Couch' },
-                { label: 'TV Stand' },
+                { label: 'T-Shirts' },
+                { label: 'Jeans' },
+                { label: 'Shirts' },
+                { label: 'Jackets' },
+                { label: 'Suits' },
               ],
             },
           ],
           [
             {
-              label: 'Kitchen',
+              label: 'Accessories',
               items: [
-                { label: 'Bar stool' },
-                { label: 'Chair' },
-                { label: 'Table' },
+                { label: 'Belts' },
+                { label: 'Hats' },
+                { label: 'Watches' },
               ],
             },
             {
-              label: 'Bathroom',
-              items: [{ label: 'Accessories' }],
-            },
-          ],
-          [
-            {
-              label: 'Bedroom',
+              label: 'Footwear',
               items: [
-                { label: 'Bed' },
-                { label: 'Chaise lounge' },
-                { label: 'Cupboard' },
-                { label: 'Dresser' },
-                { label: 'Wardrobe' },
-              ],
-            },
-          ],
-          [
-            {
-              label: 'Office',
-              items: [
-                { label: 'Bookcase' },
-                { label: 'Cabinet' },
-                { label: 'Chair' },
-                { label: 'Desk' },
-                { label: 'Executive Chair' },
+                { label: 'Sneakers' },
+                { label: 'Boots' },
+                { label: 'Sandals' },
               ],
             },
           ],
         ],
       },
       {
-        label: 'Electronics',
-        icon: 'pi pi-mobile',
+        label: 'Women',
+        icon: 'pi pi-female',
         items: [
           [
             {
-              label: 'Computer',
+              label: 'Clothing',
               items: [
-                { label: 'Monitor' },
-                { label: 'Mouse' },
-                { label: 'Notebook' },
-                { label: 'Keyboard' },
-                { label: 'Printer' },
-                { label: 'Storage' },
+                { label: 'Dresses' },
+                { label: 'Tops' },
+                { label: 'Skirts' },
+                { label: 'Jeans' },
+                { label: 'Coats' },
               ],
             },
           ],
           [
             {
-              label: 'Home Theather',
+              label: 'Accessories',
               items: [
-                { label: 'Projector' },
-                { label: 'Speakers' },
-                { label: 'TVs' },
+                { label: 'Jewelry' },
+                { label: 'Handbags' },
+                { label: 'Scarves' },
               ],
             },
-          ],
-          [
             {
-              label: 'Gaming',
+              label: 'Footwear',
               items: [
-                { label: 'Accessories' },
-                { label: 'Console' },
-                { label: 'PC' },
-                { label: 'Video Games' },
-              ],
-            },
-          ],
-          [
-            {
-              label: 'Appliances',
-              items: [
-                { label: 'Coffee Machine' },
-                { label: 'Fridge' },
-                { label: 'Oven' },
-                { label: 'Vaccum Cleaner' },
-                { label: 'Washing Machine' },
+                { label: 'Heels' },
+                { label: 'Flats' },
+                { label: 'Sneakers' },
               ],
             },
           ],
         ],
       },
       {
-        label: 'Sports',
-        icon: 'pi pi-clock',
+        label: 'Kids',
+        icon: 'pi pi-child',
         items: [
           [
             {
-              label: 'Football',
+              label: 'Boys',
               items: [
-                { label: 'Kits' },
-                { label: 'Shoes' },
-                { label: 'Shorts' },
-                { label: 'Training' },
-              ],
-            },
-          ],
-          [
-            {
-              label: 'Running',
-              items: [
-                { label: 'Accessories' },
-                { label: 'Shoes' },
                 { label: 'T-Shirts' },
                 { label: 'Shorts' },
+                { label: 'Jeans' },
+                { label: 'Jackets' },
               ],
             },
           ],
           [
             {
-              label: 'Swimming',
+              label: 'Girls',
               items: [
-                { label: 'Kickboard' },
-                { label: 'Nose Clip' },
-                { label: 'Swimsuits' },
-                { label: 'Paddles' },
+                { label: 'Dresses' },
+                { label: 'Tops' },
+                { label: 'Leggings' },
+                { label: 'Jackets' },
               ],
             },
           ],
           [
             {
-              label: 'Tennis',
+              label: 'Accessories',
               items: [
-                { label: 'Balls' },
-                { label: 'Rackets' },
+                { label: 'Backpacks' },
+                { label: 'Hats' },
                 { label: 'Shoes' },
-                { label: 'Training' },
               ],
             },
           ],
         ],
       },
-    ];
+      {
+        label: 'Sale',
+        icon: 'pi pi-tag',
+        items: [
+          [
+            {
+              label: 'Men\'s Sale',
+              items: [
+                { label: 'T-Shirts' },
+                { label: 'Jeans' },
+                { label: 'Jackets' },
+                { label: 'Footwear' },
+              ],
+            },
+          ],
+          [
+            {
+              label: 'Women\'s Sale',
+              items: [
+                { label: 'Dresses' },
+                { label: 'Tops' },
+                { label: 'Handbags' },
+                { label: 'Footwear' },
+              ],
+            },
+          ],
+          [
+            {
+              label: 'Kids\' Sale',
+              items: [
+                { label: 'Clothing' },
+                { label: 'Accessories' },
+                { label: 'Footwear' },
+              ],
+            },
+          ],
+        ],
+      },
+      {
+        label: 'New Arrivals',
+        icon: 'pi pi-star',
+        items: [
+          [
+            {
+              label: 'Men\'s New Arrivals',
+              items: [
+                { label: 'T-Shirts' },
+                { label: 'Jeans' },
+                { label: 'Footwear' },
+              ],
+            },
+          ],
+          [
+            {
+              label: 'Women\'s New Arrivals',
+              items: [
+                { label: 'Dresses' },
+                { label: 'Tops' },
+                { label: 'Handbags' },
+              ],
+            },
+          ],
+          [
+            {
+              label: 'Kids\' New Arrivals',
+              items: [
+                { label: 'Clothing' },
+                { label: 'Accessories' },
+                { label: 'Footwear' },
+              ],
+            },
+          ],
+        ],
+      },
+    ];    
   }
 }
