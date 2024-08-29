@@ -1,7 +1,13 @@
+.mt-category-list {
+  height: calc(100% - 45px);
+}
+
 ::ng-deep {
   .categories-menu {
+    height: 100%;
+
     .p-megamenu-panel {
-        z-index: 1000;
+      z-index: 1000;
     }
   }
 }
