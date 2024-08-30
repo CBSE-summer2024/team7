@@ -5,7 +5,7 @@ import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'mt-nav-bar',
   standalone: true,
   imports: [MenubarModule, ButtonModule],
   templateUrl: './nav-bar.component.html',
