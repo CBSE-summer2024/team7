@@ -33,6 +33,24 @@
   color: #61dafb;
 }
 
+
+
+.my-element {
+  display: flex;
+  gap: 10px; 
+}
+
+.my-element div {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  padding: 20px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
