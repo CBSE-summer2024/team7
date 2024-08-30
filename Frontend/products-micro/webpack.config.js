@@ -35,11 +35,11 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            // name: 'ProductsMicro',
-            // filename: 'remoteEntry.js',
-            // exposes: {
-            //     './Component': './src/components/products-list-wrapper.js',
-            // },
+            name: 'ProductsComponent',
+            filename: 'remoteEntry.js',
+            exposes: {
+                './ProductsList': './src/components/wrappers/containerCardWrapper.js',
+            },
             shared: {
                 "react": {
                     singleton: true,

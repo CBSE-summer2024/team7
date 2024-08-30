@@ -15,6 +15,21 @@ export class HomeComponent implements AfterViewInit {
 
   private remoteModulesConfig = [
     {
+      remoteName: 'CategoriesComponent',
+      exposedModule: './CategoriesList',
+      remoteEntry: 'http://localhost:4201/remoteEntry.js',
+      target: 'categories',
+      type: 'angular'
+    },
+    {
+      remoteName: 'ProductsComponent',
+      exposedModule: './ProductsList',
+      remoteEntry: 'http://localhost:4202/remoteEntry.js',
+      target: 'products',
+      type: 'customElement',
+      elementTag: 'products-component'
+    },
+    {
       remoteName: 'AlertsComponent',
       exposedModule: './WarningAlert',
       remoteEntry: 'http://localhost:4203/remoteEntry.js',
@@ -31,9 +46,9 @@ export class HomeComponent implements AfterViewInit {
         exposedModule: config.exposedModule,
         remoteEntry: config.remoteEntry
       });      
-
+      
       if (config.type === 'angular') {
-        const containerRef = this[config.target as keyof HomeComponent] as ViewContainerRef;        
+        const containerRef = this[config.target as keyof HomeComponent] as ViewContainerRef;   
         containerRef.createComponent(module[Object.keys(module)[0]]);
       } else if (config.type === 'customElement' && config.elementTag) {
         const elementRef = this[config.target as keyof HomeComponent] as ElementRef;

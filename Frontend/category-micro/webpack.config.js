@@ -10,8 +10,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "categoryMicro",
-    publicPath: "auto"
+    publicPath: "http://localhost:4201/"
   },
   optimization: {
     runtimeChunk: false
@@ -26,24 +25,12 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-        library: { type: "module" },
-
-        // name: "categoryMicro",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './/src/app/app.component.ts',
-        // },
-
-        shared: share({
-          "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-          "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-          "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-          "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-
-          ...sharedMappings.getDescriptors()
-        })
-
-    }),
-    sharedMappings.getPlugin()
+      name: "CategoriesComponent",
+      filename: "remoteEntry.js",
+      exposes: {
+        './CategoriesList': './src/app/containers/category-container/category-container.component.ts',
+      },
+      shared: ["@angular/core", "@angular/common", "@angular/router"]
+    })
   ],
 };
