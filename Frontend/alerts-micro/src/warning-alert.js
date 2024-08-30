@@ -16,8 +16,15 @@ export class WarningAlert extends LitElement {
       background-color: #3a5795;
       color: white;
       padding: 5px 10px;
-      margin-left: 10px;
+      margin-left: 30px;
       border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .button:hover {
+      color: #3a5795;
+      background-color: white;
+      border: 1px solid #3a5795;
     }
     .text-content {
       flex-grow: 1;
@@ -25,6 +32,21 @@ export class WarningAlert extends LitElement {
     .title {
       font-weight: bold;
       margin-right: 10px;
+    }
+    .cancel-button {
+      background-color: #d9534f;
+      border: none;
+      border-radius: 100%;
+      color: white;
+      cursor: pointer;
+      margin-left: 30px;
+    }
+    .cancel-button::before {
+      content: '×';
+      font-size: 18px;
+      font-weight: bold;
+      float: left;
+      margin-top: 1.5px;
     }
   `;
 
@@ -46,7 +68,12 @@ export class WarningAlert extends LitElement {
       <b class="title">Very important:</b>
       <span class="text-content">${this.alertText}!</span>
       <button class="button">${this.buttonText}</button>
+      <button class="cancel-button" @click="${this._handleCancel}"></button>
     `;
+  }
+
+  _handleCancel() {
+    console.log('Cancel button clicked');
   }
 }
 
