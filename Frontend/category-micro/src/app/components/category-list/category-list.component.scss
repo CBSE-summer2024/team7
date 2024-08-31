@@ -11,3 +11,15 @@
     }
   }
 }
+
+::ng-deep .p-megamenu-root-list {
+  padding: 0;
+}
+
+::ng-deep .categories-menu .p-menuitem-link {
+  text-decoration: none;
+}
+
+::ng-deep .categories-menu .p-menuitem-link:hover {
+  text-decoration: none;
+}

@@ -17,7 +17,7 @@ export class CategoryListComponent implements OnInit {
     this.items = [
       {
         label: 'Men',
-        icon: 'pi pi-male',
+        icon: 'pi pi-user',
         items: [
           [
             {
@@ -53,7 +53,7 @@ export class CategoryListComponent implements OnInit {
       },
       {
         label: 'Women',
-        icon: 'pi pi-female',
+        icon: 'pi pi-heart-fill',
         items: [
           [
             {
@@ -89,7 +89,7 @@ export class CategoryListComponent implements OnInit {
       },
       {
         label: 'Kids',
-        icon: 'pi pi-child',
+        icon: 'pi pi-face-smile',
         items: [
           [
             {
