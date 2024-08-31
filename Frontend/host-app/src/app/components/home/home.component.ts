@@ -10,6 +10,7 @@ import { AfterViewInit, Component, ElementRef, ViewChild, ViewContainerRef } fro
 })
 export class HomeComponent implements AfterViewInit {
   @ViewChild('productsList', { read: ElementRef }) products!: ElementRef;
+  @ViewChild('productsSlider', { read: ElementRef }) slider!: ElementRef;
   @ViewChild('categoryList', { read: ViewContainerRef }) categories!: ViewContainerRef;
   @ViewChild('warningAlerts', { read: ElementRef }) warningAlerts!: ElementRef;
 
@@ -30,6 +31,14 @@ export class HomeComponent implements AfterViewInit {
       elementTag: 'products-component'
     },
     {
+      remoteName: 'ProductsComponent',
+      exposedModule: './ProductsSlider',
+      remoteEntry: 'http://localhost:4202/remoteEntry.js',
+      target: 'slider',
+      type: 'customElement',
+      elementTag: 'slider-component'
+    },
+    {
       remoteName: 'AlertsComponent',
       exposedModule: './WarningAlert',
       remoteEntry: 'http://localhost:4203/remoteEntry.js',
@@ -45,7 +54,7 @@ export class HomeComponent implements AfterViewInit {
         remoteName: config.remoteName,
         exposedModule: config.exposedModule,
         remoteEntry: config.remoteEntry
-      });      
+      });            
       
       if (config.type === 'angular') {
         const containerRef = this[config.target as keyof HomeComponent] as ViewContainerRef;   
