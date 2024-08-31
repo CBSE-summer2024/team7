@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 79%;
+
+  .top {
+    display: flex;
+
+    .text {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px;
+      color: white;
+      background-color: #ff9549;
+      width: 200px;
+    }
+
+    .search {
+      background: #f7f7f7;
+      flex-grow: 1;
+      padding: 10px;
+      display: flex;
+    }
+  }
+
+  .bottom {
+    display: flex;
+
+    .list {
+      width: 200px;
+    }
+  }
+}
+
+::ng-deep {
+  .p-inputwrapper {
+    width: 70%;
+  }
+
+  .auto-complete-search {
+    width: 100%;
+
+    .p-autocomplete-input {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.mt-category-list {
+  height: calc(100% - 45px);
+}
+
+::ng-deep {
+  .categories-menu {
+    height: 100%;
+
+    .p-megamenu-panel {
+      z-index: 1000;
+    }
+  }
+}
+
+::ng-deep .p-megamenu-root-list {
+  padding: 0;
+}
+
+::ng-deep .categories-menu .p-menuitem-link {
+  text-decoration: none;
+}
+
+::ng-deep .categories-menu .p-menuitem-link:hover {
+  text-decoration: none;
+}

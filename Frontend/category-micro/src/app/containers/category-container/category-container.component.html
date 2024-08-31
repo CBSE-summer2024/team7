@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="top">
+    <div class="text"><span>Categories</span></div>
+    <div class="search">
+      <p-autoComplete
+        [formControl]="searchText"
+        placeholder="Search"
+        styleClass="auto-complete-search"
+        [suggestions]="filteredItems"
+        (completeMethod)="filterItem($event)"
+      />
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="list"><mt-category-list></mt-category-list></div>
+    <div class="ads-board"><mt-ads-slider></mt-ads-slider></div>
+  </div>
+</div>
