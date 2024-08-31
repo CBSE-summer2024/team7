@@ -38,6 +38,7 @@ module.exports = {
             name: 'ProductsComponent',
             filename: 'remoteEntry.js',
             exposes: {
+                './ProductsSlider': './src/components/wrappers/sliderWrapper.js',
                 './ProductsList': './src/components/wrappers/containerCardWrapper.js',
             },
             shared: {
