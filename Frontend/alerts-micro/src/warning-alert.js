@@ -60,7 +60,7 @@ export class WarningAlert extends LitElement {
   constructor() {
     super();
     this.buttonText = 'Login';
-    this.alertText = 'Note that without logging account. It comes from the offers and to complete the purchase process in the easiest and easiest way'
+    this.alertText = 'Note that without logging account. It comes from the offers and to complete the purchase process the easiest and easiest way'
   }
 
   render() {
